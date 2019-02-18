@@ -1,9 +1,9 @@
 # Copyright 2017 Palantir Technologies, Inc.
 import os
-from pyls import lsp, uris
-from pyls.config.config import Config
-from pyls.workspace import Document
-from pyls.plugins import pycodestyle_lint
+from upyls import lsp, uris
+from upyls.config.config import Config
+from upyls.workspace import Document
+from upyls.plugins import pycodestyle_lint
 
 DOC_URI = uris.from_fs_path(__file__)
 DOC = """import sys

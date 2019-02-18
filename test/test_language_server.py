@@ -6,7 +6,7 @@ from test import unix_only
 from pyls_jsonrpc.exceptions import JsonRpcMethodNotFound
 import pytest
 
-from pyls.python_ls import start_io_lang_server, PythonLanguageServer
+from upyls.python_ls import start_io_lang_server, PythonLanguageServer
 
 CALL_TIMEOUT = 2
 

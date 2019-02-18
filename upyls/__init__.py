@@ -8,7 +8,7 @@ install_aliases()
 __version__ = get_versions()['version']
 del get_versions
 
-PYLS = 'pyls'
+UPYLS = 'upyls'
 
 hookspec = pluggy.HookspecMarker(PYLS)
 hookimpl = pluggy.HookimplMarker(PYLS)

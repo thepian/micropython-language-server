@@ -1,7 +1,7 @@
 # Copyright 2017 Palantir Technologies, Inc.
 import logging
 import pycodestyle
-from pyls import hookimpl, lsp
+from upyls import hookimpl, lsp
 
 log = logging.getLogger(__name__)
 

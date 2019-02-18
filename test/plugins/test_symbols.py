@@ -1,8 +1,8 @@
 # Copyright 2017 Palantir Technologies, Inc.
-from pyls import uris
-from pyls.plugins.symbols import pyls_document_symbols
-from pyls.lsp import SymbolKind
-from pyls.workspace import Document
+from upyls import uris
+from upyls.plugins.symbols import pyls_document_symbols
+from upyls.lsp import SymbolKind
+from upyls.workspace import Document
 
 DOC_URI = uris.from_fs_path(__file__)
 DOC = """import sys

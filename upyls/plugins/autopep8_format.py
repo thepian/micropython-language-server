@@ -1,7 +1,7 @@
 # Copyright 2018 Palantir Technologies, Inc.
 import logging
 from autopep8 import fix_code
-from pyls import hookimpl
+from upyls import hookimpl
 
 log = logging.getLogger(__name__)
 

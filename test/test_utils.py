@@ -1,7 +1,7 @@
 # Copyright 2017 Palantir Technologies, Inc.
 import time
 import mock
-from pyls import _utils
+from upyls import _utils
 
 
 def test_debounce():

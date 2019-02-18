@@ -6,7 +6,7 @@ import re
 import sys
 
 import pydocstyle
-from pyls import hookimpl, lsp
+from upyls import hookimpl, lsp
 
 log = logging.getLogger(__name__)
 
@@ -58,7 +58,7 @@ def pyls_lint(config, document):
 
     conf = pydocstyle.config.ConfigurationParser()
     with _patch_sys_argv(args):
-        # TODO(gatesn): We can add more pydocstyle args here from our pyls config
+        # TODO(gatesn): We can add more pydocstyle args here from our upyls config
         conf.parse()
 
     # Will only yield a single filename, the document path

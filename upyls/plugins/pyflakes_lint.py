@@ -1,6 +1,6 @@
 # Copyright 2017 Palantir Technologies, Inc.
 from pyflakes import api as pyflakes_api, messages
-from pyls import hookimpl, lsp
+from upyls import hookimpl, lsp
 
 # Pyflakes messages that should be reported as Errors instead of Warns
 PYFLAKES_ERROR_MESSAGES = (

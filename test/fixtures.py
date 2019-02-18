@@ -3,10 +3,10 @@ import sys
 from mock import Mock
 import pytest
 
-from pyls import uris
-from pyls.config.config import Config
-from pyls.python_ls import PythonLanguageServer
-from pyls.workspace import Workspace, Document
+from upyls import uris
+from upyls.config.config import Config
+from upyls.python_ls import PythonLanguageServer
+from upyls.workspace import Workspace, Document
 
 if sys.version_info[0] < 3:
     from StringIO import StringIO
@@ -22,7 +22,7 @@ def main():
 
 
 @pytest.fixture
-def pyls(tmpdir):
+def upyls(tmpdir):
     """ Return an initialized python LS """
     ls = PythonLanguageServer(StringIO, StringIO)
 

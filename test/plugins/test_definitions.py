@@ -1,7 +1,7 @@
 # Copyright 2017 Palantir Technologies, Inc.
-from pyls import uris
-from pyls.plugins.definition import pyls_definitions
-from pyls.workspace import Document
+from upyls import uris
+from upyls.plugins.definition import pyls_definitions
+from upyls.workspace import Document
 
 DOC_URI = uris.from_fs_path(__file__)
 DOC = """def a():

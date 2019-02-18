@@ -1,8 +1,8 @@
 # Copyright 2017 Palantir Technologies, Inc.
 import pytest
-from pyls import uris
-from pyls.plugins import signature
-from pyls.workspace import Document
+from upyls import uris
+from upyls.plugins import signature
+from upyls.workspace import Document
 
 DOC_URI = uris.from_fs_path(__file__)
 DOC = """import sys

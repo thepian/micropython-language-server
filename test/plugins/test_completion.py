@@ -1,10 +1,10 @@
 # Copyright 2017 Palantir Technologies, Inc.
 import os
 
-from pyls import uris, lsp
-from pyls.workspace import Document
-from pyls.plugins.jedi_completion import pyls_completions as pyls_jedi_completions
-from pyls.plugins.rope_completion import pyls_completions as pyls_rope_completions
+from upyls import uris, lsp
+from upyls.workspace import Document
+from upyls.plugins.jedi_completion import pyls_completions as pyls_jedi_completions
+from upyls.plugins.rope_completion import pyls_completions as pyls_rope_completions
 
 LOCATION = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__))

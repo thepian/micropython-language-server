@@ -69,25 +69,25 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'pyls = pyls.__main__:main',
+            'upyls = upyls.__main__:main',
         ],
-        'pyls': [
-            'autopep8 = pyls.plugins.autopep8_format',
-            'jedi_completion = pyls.plugins.jedi_completion',
-            'jedi_definition = pyls.plugins.definition',
-            'jedi_hover = pyls.plugins.hover',
-            'jedi_highlight = pyls.plugins.highlight',
-            'jedi_references = pyls.plugins.references',
-            'jedi_signature_help = pyls.plugins.signature',
-            'jedi_symbols = pyls.plugins.symbols',
-            'mccabe = pyls.plugins.mccabe_lint',
-            'preload = pyls.plugins.preload_imports',
-            'pycodestyle = pyls.plugins.pycodestyle_lint',
-            'pydocstyle = pyls.plugins.pydocstyle_lint',
-            'pyflakes = pyls.plugins.pyflakes_lint',
-            'rope_completion = pyls.plugins.rope_completion',
-            'rope_rename = pyls.plugins.rope_rename',
-            'yapf = pyls.plugins.yapf_format',
+        'upyls': [
+            'autopep8 = upyls.plugins.autopep8_format',
+            'jedi_completion = upyls.plugins.jedi_completion',
+            'jedi_definition = upyls.plugins.definition',
+            'jedi_hover = upyls.plugins.hover',
+            'jedi_highlight = upyls.plugins.highlight',
+            'jedi_references = upyls.plugins.references',
+            'jedi_signature_help = upyls.plugins.signature',
+            'jedi_symbols = upyls.plugins.symbols',
+            'mccabe = upyls.plugins.mccabe_lint',
+            'preload = upyls.plugins.preload_imports',
+            'pycodestyle = upyls.plugins.pycodestyle_lint',
+            'pydocstyle = upyls.plugins.pydocstyle_lint',
+            'pyflakes = upyls.plugins.pyflakes_lint',
+            'rope_completion = upyls.plugins.rope_completion',
+            'rope_rename = upyls.plugins.rope_rename',
+            'yapf = upyls.plugins.yapf_format',
         ]
     },
 )

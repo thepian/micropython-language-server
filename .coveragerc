@@ -1,2 +1,2 @@
 [run]
-omit = pyls/_version.py
+omit = upyls/_version.py

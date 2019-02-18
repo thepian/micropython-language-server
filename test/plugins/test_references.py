@@ -1,9 +1,9 @@
 # Copyright 2017 Palantir Technologies, Inc.
 import os
 import pytest
-from pyls import uris
-from pyls.workspace import Document
-from pyls.plugins.references import pyls_references
+from upyls import uris
+from upyls.workspace import Document
+from upyls.plugins.references import pyls_references
 
 
 DOC1_NAME = 'test1.py'

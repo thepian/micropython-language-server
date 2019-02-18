@@ -4,7 +4,7 @@ import pkg_resources
 
 import pluggy
 
-from pyls import _utils, hookspecs, uris, PYLS
+from upyls import _utils, hookspecs, uris, PYLS
 
 log = logging.getLogger(__name__)
 
@@ -55,7 +55,7 @@ class Config(object):
 
         for name, plugin in self._pm.list_name_plugin():
             if plugin is not None:
-                log.info("Loaded pyls plugin %s from %s", name, plugin)
+                log.info("Loaded upyls plugin %s from %s", name, plugin)
 
         for plugin_conf in self._pm.hook.pyls_settings(config=self):
             self._plugin_settings = _utils.merge_dicts(self._plugin_settings, plugin_conf)
@@ -86,7 +86,7 @@ class Config(object):
         """Settings are constructed from a few sources:
 
             1. User settings, found in user's home directory
-            2. Plugin settings, reported by PyLS plugins
+            2. Plugin settings, reported by uPyLS plugins
             3. LSP settings, given to us from didChangeConfiguration
             4. Project settings, found in config files in the current project.
 

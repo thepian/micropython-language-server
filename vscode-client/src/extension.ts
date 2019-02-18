@@ -17,7 +17,7 @@ function startLangServer(command: string, args: string[], documentSelector: stri
 	const clientOptions: LanguageClientOptions = {
 		documentSelector: documentSelector,
         synchronize: {
-            configurationSection: "pyls"
+            configurationSection: "upyls"
         }
 	}
 	return new LanguageClient(command, serverOptions, clientOptions).start();
@@ -43,8 +43,7 @@ function startLangServerTCP(addr: number, documentSelector: string[]): Disposabl
 }
 
 export function activate(context: ExtensionContext) {
-    context.subscriptions.push(startLangServer("pyls", ["-vv"], ["python"]));
+    context.subscriptions.push(startLangServer("upyls", ["-vv"], ["python"]));
     // For TCP server needs to be started seperately
     // context.subscriptions.push(startLangServerTCP(2087, ["python"]));
 }
-
